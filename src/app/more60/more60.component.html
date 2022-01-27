@@ -1,0 +1,8 @@
+<div class="items">
+    <button class="back" routerLink="">Go back</button>
+        <h1 class="titre">Plus de 60</h1>
+          <app-people
+            [people]="info"
+            *ngFor="let info of more60"
+          ></app-people>
+</div>

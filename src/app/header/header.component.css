@@ -1,6 +1,12 @@
 header {
     text-align: center;
-    background-color: #EEE;
+    color: red;
+    text-transform: uppercase;
     margin-bottom: 20px;
     padding: 10px;
+    background-color: black;
+}
+
+.titre{
+    color: red;
 }

@@ -1,0 +1,9 @@
+
+<div class="items">
+  <button class="back" routerLink="">Go back</button>
+      <h1 class="titre">Moins de 40</h1>
+        <app-people
+          [people]="info"
+          *ngFor="let info of under40"
+        ></app-people>
+      </div>

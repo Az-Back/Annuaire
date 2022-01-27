@@ -1,27 +1,5 @@
-<div class="items">
-    <div class="gauche">
-      <h1>Moins de 40</h1>
-        <app-people
-          [people]="ligne"
-          *ngFor="let ligne of under40"
-        ></app-people>
-        <p>---</p>
-      </div>
-    <div class="milieu">
-      <h1>Entre 40 et 60</h1>
-        <app-people
-          [people]="ligne"
-          *ngFor="let ligne of in40and60"
-        ></app-people>
-        <p>---</p>
-      </div>
-    
-    <div class="droite">
-      <h1>Plus de 60</h1>
-        <app-people
-          [people]="ligne"
-          *ngFor="let ligne of more60"
-        ></app-people>
-        <p>---</p>
-      </div>
-</div>     
+<div class="All">
+<button class="btn1" routerLink="/40">Moins de 40!</button>
+<button class="btn2" routerLink="/40and60">Entre 40 et 60</button>
+<button class="btn3" routerLink="/60">Plus de 60</button>
+</div>

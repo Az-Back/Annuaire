@@ -12,9 +12,12 @@ h1 {
   body {
     margin: 2em;
   }
-  body, input[type="text"], button {
+  body{
     color: #333;
     font-family: Cambria, Georgia, serif;
+    background-image: url("./assets/fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   }
   /* everywhere else */
   * {

@@ -1,0 +1,37 @@
+<div class="but"><button class="btninfo" routerLink="">GO to home</button></div>
+<div class="information">
+    <img src="{{ resultats.picture.large }}" />
+    <h2>Infos</h2>
+    <br />
+    {{ resultats.gender | uppercase }}, {{ resultats.name.title }}
+    {{ resultats.name.first }}
+    {{ resultats.name.last }}
+    <p>
+      Rue: {{ resultats.location.street.number }}
+      {{ resultats.location.street.name }}
+    </p>
+    <p>
+      Localisation : {{ resultats.location.city }}, {{ resultats.location.state }}
+      {{ resultats.location.country }}
+    </p>
+    <p>Postcode : {{ resultats.location.postcode }}</p>
+    <p>
+      Latitude / Longitude : {{ resultats.location.coordinates.latitude }},{{
+        resultats.location.coordinates.longitude
+      }}
+    </p>
+    <p>
+      Fuseau Horaire : {{ resultats.location.timezone.offset }} --
+      {{ resultats.location.timezone.description }}
+    </p>
+    <p>Âge : {{ resultats.dob.age }} Ans</p>
+    <p>Entrée il y'a {{ resultats.registered.age }} ans</p>
+    <p>Email: {{ resultats.email }}</p>
+    <h2>Login</h2>
+    <p>Username : {{ resultats.login.username }}</p>
+    <p>Password : {{ resultats.login.password }}</p>
+<div class="All"><button class="btninfo" routerLink="/40">GO to under 40</button>
+  <button class="btninfo" routerLink="/40and60">GO to 40 and 60</button>
+  <button class="btninfo" routerLink="/60">GO to more 60</button>
+</div>
+  </div>

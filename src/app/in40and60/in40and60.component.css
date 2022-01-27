@@ -1,0 +1,21 @@
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .back {
+    margin: 0 auto;
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+.titre {
+  text-align: center;
+  color: red;
+  background-color: black;
+}  

@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { HeaderComponent } from './header/header.component';
 import { PeopleComponent } from './people/people.component';
+import { InfoPeopleComponent } from './info-people/info-people.component';
+import { Under40Component } from './under40/under40.component';
+import { In40and60Component } from './in40and60/in40and60.component';
+import { More60Component } from './more60/more60.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,10 @@ import { PeopleComponent } from './people/people.component';
     ListComponent,
     HeaderComponent,
     PeopleComponent,
+    InfoPeopleComponent,
+    Under40Component,
+    In40and60Component,
+    More60Component,
   ],
   imports: [
     BrowserModule,

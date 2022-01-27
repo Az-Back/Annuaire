@@ -1,28 +1,35 @@
-.btninfo {
-    border-radius: 8%;
-    background-color: aquamarine;
-    font-size: 22px;
-    max-width: 1500px;
-    height: 35px;
-    color: rgb(0, 0, 0);
-    border: transparent;
-    -webkit-border-radius: 8%;
-    -moz-border-radius: 8%;
-    -ms-border-radius: 8%;
-    -o-border-radius: 8%;
-  }
-  
-  .btninfo:hover {
-    background-color: rgb(72, 196, 154);
-    max-width: 1500px;
-    height: 35px;
-    box-shadow: 1px 1px 3px 1px white;
-  }
-  
-  /*Permet de dire que celui est la classe qui va predominer la page*/
-  
-  :host {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
+.container {
+  text-align: center;
+  margin: auto auto;
+  max-width: 300px;
+  background-color: white;
+}
+
+img {
+  width: 80px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.btn {
+  margin: 0 auto;
+    border: 2px solid red;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  height: 10px;
+  background-color: palevioletred;
+}

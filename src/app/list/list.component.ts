@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import Json from '../../assets/liste.json';
-import { People } from '../models/people';
+import { Component, OnInit, Input } from '@angular/core';
+import { Under40Component } from '../under40/under40.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -8,26 +8,8 @@ import { People } from '../models/people';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-
-  constructor() {}
-
-  list: People[] = Json.results as any;
-
-  under40! : People[];
-  in40and60! : People[];
-  more60! : People[];
-
+  constructor(private personnels: ActivatedRoute){} 
+  @Input() people!: Under40Component;
   ngOnInit(): void {
-    this.under40 = this.list.filter((People) => People.dob.age <= 40);
-
-    this.in40and60 = this.list.filter
-    (
-      (People) => People.dob.age > 40 && People.dob.age <= 60
-    );
-
-    this.more60 = this.list.filter((People) => People.dob.age > 60);
-    
-    this.list[0];
-  }
-
+}
 }
