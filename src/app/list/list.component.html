@@ -1,0 +1,27 @@
+<div class="items">
+    <div class="gauche">
+      <h1>Moins de 40</h1>
+        <app-people
+          [people]="ligne"
+          *ngFor="let ligne of under40"
+        ></app-people>
+        <p>---</p>
+      </div>
+    <div class="milieu">
+      <h1>Entre 40 et 60</h1>
+        <app-people
+          [people]="ligne"
+          *ngFor="let ligne of in40and60"
+        ></app-people>
+        <p>---</p>
+      </div>
+    
+    <div class="droite">
+      <h1>Plus de 60</h1>
+        <app-people
+          [people]="ligne"
+          *ngFor="let ligne of more60"
+        ></app-people>
+        <p>---</p>
+      </div>
+</div>     

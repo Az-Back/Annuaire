@@ -1,0 +1,29 @@
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 250px;
+  }
+  
+  .droite {
+    text-align: center;
+    align-self: flex-start;
+    border: 1px solid #000;
+    flex: 20px;
+  }
+  
+  .gauche {
+    text-align: center;
+    align-self: flex-start;
+    border: 1px solid #000;
+    flex: 20px;
+  }
+  
+  .milieu {
+    text-align: center;
+    align-self: center;
+    border: 1px solid #000;
+    flex: 20px;
+  }

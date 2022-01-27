@@ -1,0 +1,12 @@
+<img src="{{ people.picture.thumbnail }}" />
+<br />
+{{ people.gender | uppercase }}, {{ people.name.title }}
+{{ people.name.first }}
+{{ people.name.last }}
+
+<p>Email: {{ people.email }}</p>
+<button class="btninfo" routerLink="/details/{{ people.login.uuid }}">
+  Plus d'infos
+</button>
+<br />
+<br />

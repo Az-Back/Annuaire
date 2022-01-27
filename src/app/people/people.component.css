@@ -1,0 +1,28 @@
+.btninfo {
+    border-radius: 8%;
+    background-color: aquamarine;
+    font-size: 22px;
+    max-width: 1500px;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    border: transparent;
+    -webkit-border-radius: 8%;
+    -moz-border-radius: 8%;
+    -ms-border-radius: 8%;
+    -o-border-radius: 8%;
+  }
+  
+  .btninfo:hover {
+    background-color: rgb(72, 196, 154);
+    max-width: 1500px;
+    height: 35px;
+    box-shadow: 1px 1px 3px 1px white;
+  }
+  
+  /*Permet de dire que celui est la classe qui va predominer la page*/
+  
+  :host {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
